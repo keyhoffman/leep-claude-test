@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Leep - Video Landing Pages for Freelancers',
-  description: 'Create personalized video pitches for freelance applications',
+  description: 'Create personalized video pitches for every job application and increase your chances of landing freelance contracts.',
 };
 
 export default function RootLayout({
