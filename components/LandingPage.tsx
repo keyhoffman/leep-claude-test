@@ -107,7 +107,13 @@ const LandingPage = () => {
   );
 };
 
-const FeatureCard = ({ icon: Icon, title, description }) => (
+interface FeatureCardProps {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+}
+
+const FeatureCard = ({ icon: Icon, title, description }: FeatureCardProps) => (
   <Card className="p-6">
     <CardContent className="space-y-4 pt-4">
       <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center">
@@ -119,7 +125,13 @@ const FeatureCard = ({ icon: Icon, title, description }) => (
   </Card>
 );
 
-const StepCard = ({ number, title, description }) => (
+interface StepCardProps {
+  number: string;
+  title: string;
+  description: string;
+}
+
+const StepCard = ({ number, title, description }: StepCardProps) => (
   <div className="text-center">
     <div className="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xl font-bold mx-auto mb-4">
       {number}
